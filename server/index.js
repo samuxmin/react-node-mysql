@@ -2,7 +2,9 @@ import express from "express"
 import cors from 'cors'
 import {PORT} from "./config.js"
 import indexRoutes from "./routes/index.routes.js"
-import patientRoutes from "./routes/patients.routes.js"
+import resortRoutes from './routes/resort.routes.js'
+import clientRoutes from "./routes/client.routes.js"
+import propertyRoutes from './routes/property.routes.js'
 
 const app = express()
 app.listen(PORT)
@@ -14,4 +16,6 @@ app.use(cors({
 app.use(express.json())
 
 app.use(indexRoutes)
-app.use(patientRoutes)
+app.use(resortRoutes)
+app.use(clientRoutes)
+app.use(propertyRoutes)

@@ -6,6 +6,6 @@ export const pool = createPool({
     port: 3306,
     user: 'root',
     password: 'nemesio',
-    database: 'msp_web',
+    database: 'real_estate',
 
   });
