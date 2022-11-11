@@ -15,4 +15,4 @@ router.post("/api/propertyes", createProperty)
 router.put("/api/propertyes/:code", updateProperty)
 router.delete("/api/propertyes/:code", deleteProperty)
 
-export default router                                                
+export default router

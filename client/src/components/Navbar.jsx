@@ -6,10 +6,14 @@ export default function Navbar() {
         <h1>Real Estate</h1>
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/resorts">Resorts</Link>
             </li>
+            {/*
+              <li>
+                  <Link to="/createresort">Create Resort</Link>
+              </li>*/}
             <li>
-                <Link to="/new">New</Link>
+                <Link to="/propertyes">See all propertyes</Link>
             </li>
         </ul>
     </div>

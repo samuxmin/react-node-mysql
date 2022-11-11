@@ -2,10 +2,10 @@ import {pool} from "../db.js"
 export const getPropertyes = async (req, res) =>{
     try {
         if(req.params.resort){
-            const [result] = await pool.query("SELECT * from property where resort_name = ?", [req.params.resort])
+            const [result] = await pool.query("SELECT * from property where resort_name = ? order by price desc", [req.params.resort])
             res.json(result)
         }else{
-            const [result] = await pool.query("SELECT * FROM property")
+            const [result] = await pool.query("SELECT * FROM property order by resort_name, price desc")
             res.json(result)
         }
         

@@ -5,6 +5,7 @@ import indexRoutes from "./routes/index.routes.js"
 import resortRoutes from './routes/resort.routes.js'
 import clientRoutes from "./routes/client.routes.js"
 import propertyRoutes from './routes/property.routes.js'
+import accomodationRoutes from './routes/accomodations.routes.js'
 
 const app = express()
 app.listen(PORT)
@@ -19,3 +20,4 @@ app.use(indexRoutes)
 app.use(resortRoutes)
 app.use(clientRoutes)
 app.use(propertyRoutes)
+app.use(accomodationRoutes)
