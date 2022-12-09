@@ -6,6 +6,7 @@ import Resort from "../components/Resort"
 export default function ResortPage() {
   const [resorts, setResorts] = useState([])
   useEffect(()=>{
+    document.title = "Resorts"
     async function getResorts (){
       let {data} = await getResortsRequest()
       setResorts(data)
